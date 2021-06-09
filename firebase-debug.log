@@ -1,0 +1,59 @@
+[debug] [2021-06-09T09:51:40.952Z] ----------------------------------------------------------------------
+[debug] [2021-06-09T09:51:40.954Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jack.henry\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting:github
+[debug] [2021-06-09T09:51:40.954Z] CLI Version:   9.12.1
+[debug] [2021-06-09T09:51:40.954Z] Platform:      win32
+[debug] [2021-06-09T09:51:40.954Z] Node Version:  v16.0.0
+[debug] [2021-06-09T09:51:40.955Z] Time:          Wed Jun 09 2021 10:51:40 GMT+0100 (British Summer Time)
+[debug] [2021-06-09T09:51:40.955Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-09T09:51:40.960Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-09T09:51:40.960Z] > authorizing via signed-in user (maninthebox404@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\jack.henry\planner
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using maninthebox-planner. 
+[debug] [2021-06-09T09:51:45.768Z] > refreshing access token with scopes: []
+[debug] [2021-06-09T09:51:45.768Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-09T09:51:45.882Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Wed, 09 Jun 2021 09:51:45 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-09T09:51:45.893Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/maninthebox-planner [none]
+[debug] [2021-06-09T09:51:46.122Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/maninthebox-planner 200
+[debug] [2021-06-09T09:51:46.122Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/maninthebox-planner {"projectId":"maninthebox-planner","projectNumber":"284918807005","displayName":"ManInTheBox-Planner","name":"projects/maninthebox-planner","resources":{"hostingSite":"maninthebox-planner","realtimeDatabaseInstance":"maninthebox-planner-default-rtdb","storageBucket":"maninthebox-planner.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Detected a .git folder at C:\Users\jack.henry\planner 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=573647315&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-06-09T09:52:00.115Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"a9dcaef3004ea61058bc","redirect_uri":"http://localhost:9005","state":"573647315"}
+[debug] [2021-06-09T09:52:00.379Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Wed, 09 Jun 2021 09:52:00 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"35ff234b878410697cb16202c0fa5324\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com html-translator.herokuapp.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-3f088aa2.js gist.github.com/socket-worker-3f088aa2.js","x-github-request-id":"C7F1:A616:5EAB22:652C9F:60C08F40"}
+[debug] [2021-06-09T09:52:00.384Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-06-09T09:52:00.775Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-06-09T09:52:00.775Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"ManInThe-Box","id":83351433,"node_id":"MDQ6VXNlcjgzMzUxNDMz","avatar_url":"https://avatars.githubusercontent.com/u/83351433?v=4","gravatar_id":"","url":"https://api.github.com/users/ManInThe-Box","html_url":"https://github.com/ManInThe-Box","followers_url":"https://api.github.com/users/ManInThe-Box/followers","following_url":"https://api.github.com/users/ManInThe-Box/following{/other_user}","gists_url":"https://api.github.com/users/ManInThe-Box/gists{/gist_id}","starred_url":"https://api.github.com/users/ManInThe-Box/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/ManInThe-Box/subscriptions","organizations_url":"https://api.github.com/users/ManInThe-Box/orgs","repos_url":"https://api.github.com/users/ManInThe-Box/repos","events_url":"https://api.github.com/users/ManInThe-Box/events{/privacy}","received_events_url":"https://api.github.com/users/ManInThe-Box/received_events","type":"User","site_admin":false,"name":"Jack Henry","company":null,"blog":"https://www.linkedin.com/in/jack-henry-321b6a165/","location":"Northern Ireland","email":"ManInTheBox404@gmail.com","hireable":null,"bio":"Currently employed as an Assistant Web Developer.\r\nReact framework user.  Typescript is for kings","twitter_username":null,"public_repos":4,"public_gists":0,"followers":0,"following":0,"created_at":"2021-04-28T12:55:43Z","updated_at":"2021-06-09T09:51:59Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":53661,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as ManInThe-Box 
+[info] 
